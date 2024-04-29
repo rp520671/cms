@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "/app.js",
+      "src": "../app.js",
       "use": "@vercel/node"
     }
   ],
@@ -10,15 +10,15 @@
   "routes": [
     {
       "src": "/adminroutes",
-      "dest": "/adminroutes.js"
+      "dest": "../routes/adminroutes.js"
     },
     {
       "src": "/defaultroutes",
-      "dest": "/defaultroutes.js"
+      "dest": "../routes/defaultroutes.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/app.js"
+      "dest": "../app.js"
     }
   ]
 }
